@@ -1,2 +1,32 @@
 .menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  //left: 92vw;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut();
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut();
+  }
+  &.close {
+    transform: rotate(-180deg);
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
 }
+
+// Change the menu button to an X
