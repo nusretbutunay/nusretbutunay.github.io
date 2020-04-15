@@ -1,9 +1,9 @@
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
-  right: 0;
+  right: 20px;
   //left: 92vw;
-  top: 35px;
+  top: 30px;
   cursor: pointer;
   @include easeOut();
   .btn-line {
@@ -29,4 +29,86 @@
   }
 }
 
-// Change the menu button to an X
+// menu overlay
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut();
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &-branding {
+    background-color: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut();
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/profile.jpg");
+      border-radius: 50%;
+      border: solid $secondary-color 3px;
+      background-size: cover;
+    }
+  }
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// delay nav items
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
