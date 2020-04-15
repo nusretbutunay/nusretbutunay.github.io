@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(-180deg); }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #f2f2f2;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background-color: #444;
+    background-color: #fff;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/profile.jpg");
       border-radius: 50%;
-      border: solid #eece1a 3px;
+      border: solid #c5aa0d 3px;
       background-size: cover; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -65,18 +65,18 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #c5aa0d; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
     font-size: 30px;
     padding: 1rem 0;
     font-weight: 500;
-    color: white;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #c5aa0d; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -124,8 +124,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #fff;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -141,7 +141,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.8);
+      background: rgba(255, 255, 255, 0.8);
       z-index: -1; }
 
 h1,
@@ -158,7 +158,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(255, 255, 255, 0.5); }
 
 a {
   color: #fff;
@@ -169,7 +169,7 @@ header {
   z-index: 2; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #c5aa0d; }
 
 main {
   padding: 4rem;
@@ -179,7 +179,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #c5aa0d;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
