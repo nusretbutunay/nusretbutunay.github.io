@@ -22,7 +22,7 @@ header .top-header-titles {
 }
 
 header i {
-  color: #0fadd1;
+  color: #097f99;
   padding: 0 5px;
 }
 
@@ -34,7 +34,7 @@ header i {
 }
 
 nav {
-  border-bottom: 1px solid #0fadd1;
+  border-bottom: 1px solid #097f99;
   overflow: hidden;
   z-index: 5;
 }
@@ -64,7 +64,7 @@ nav .nav-bar .logo h1 {
 }
 
 nav .nav-bar .logo #last-initial {
-  color: #0fadd1;
+  color: #097f99;
 }
 
 nav .nav-bar ul {
@@ -83,7 +83,7 @@ nav .nav-bar a {
 }
 
 nav .nav-bar a:hover {
-  color: #0fadd1;
+  color: #097f99;
 }
 
 .sticky {
@@ -104,6 +104,7 @@ nav .nav-bar a:hover {
 
 #home h1 {
   font-size: 45px;
+  width: 30vw;
 }
 
 #home .container {
@@ -111,16 +112,16 @@ nav .nav-bar a:hover {
 }
 
 #home .button {
-  color: #0fadd1;
+  color: #097f99;
   margin-top: 20px;
   padding: 10px;
-  border: 1px solid #0fadd1;
+  border: 1px solid #097f99;
   border-radius: 10px;
   font-weight: bold;
 }
 
 #home .button:hover {
-  background: #0fa9cd;
+  background: #097b95;
   color: #fff;
 }
 
