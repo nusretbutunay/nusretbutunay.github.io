@@ -1,8 +1,28 @@
 #home {
-  margin: 100px;
-  height: 500px;
+  background-image: url("../img/nusret.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 30vh 20vw;
 
   h1 {
     font-size: 45px;
+  }
+  .container {
+    height: 100vh;
+  }
+  .button {
+    color: $secondary-color;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    font-weight: bold;
+
+    &:hover {
+      background: darken($color: $secondary-color, $amount: 0.9);
+      color: #fff;
+    }
   }
 }

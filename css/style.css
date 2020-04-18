@@ -94,12 +94,34 @@ nav .nav-bar a:hover {
 }
 
 #home {
-  margin: 100px;
-  height: 500px;
+  background-image: url("../img/nusret.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 30vh 20vw;
 }
 
 #home h1 {
   font-size: 45px;
+}
+
+#home .container {
+  height: 100vh;
+}
+
+#home .button {
+  color: #0fadd1;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #0fadd1;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#home .button:hover {
+  background: #0fa9cd;
+  color: #fff;
 }
 
 * {
