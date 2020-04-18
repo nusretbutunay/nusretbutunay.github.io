@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 header {
   background-color: #262626;
   color: #fff;
@@ -51,6 +35,8 @@ header i {
 
 nav {
   border-bottom: 1px solid #0fadd1;
+  overflow: hidden;
+  z-index: 5;
 }
 
 nav .nav-bar {
@@ -64,6 +50,7 @@ nav .nav-bar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  margin: 10px 0;
 }
 
 nav .nav-bar .logo {
@@ -88,7 +75,7 @@ nav .nav-bar ul {
 }
 
 nav .nav-bar li {
-  padding: 15px;
+  padding: 10px 0px 10px 15px;
 }
 
 nav .nav-bar a {
@@ -97,4 +84,55 @@ nav .nav-bar a {
 
 nav .nav-bar a:hover {
   color: #0fadd1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fdfdfd;
+}
+
+#home {
+  margin: 100px;
+  height: 500px;
+}
+
+#home h1 {
+  font-size: 45px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .top-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100px;
+    margin-bottom: 50px;
+    padding: 10px 0;
+  }
 }

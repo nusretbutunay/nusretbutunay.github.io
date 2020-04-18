@@ -1,0 +1,9 @@
+@media screen and (max-width: 700px) {
+  .top-header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-bottom: 50px;
+    padding: 10px 0;
+  }
+}
