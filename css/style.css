@@ -94,25 +94,48 @@ nav .nav-bar a:hover {
 }
 
 #home {
-  background-image: url("../img/nusret.png");
-  background-size: contain;
-  background-position: right;
+  background-image: url("../img/home.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   padding: 30vh 20vw;
+  overflow: hidden;
+  color: #fff;
+}
+
+#home::before {
+  content: "";
+  display: block;
+  background-color: #262626;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#home * {
+  z-index: 1;
+  position: relative;
 }
 
 #home h1 {
   font-size: 45px;
   width: 30vw;
+  color: #fff;
 }
 
 #home .container {
   height: 100vh;
 }
 
-#home .button {
+#home .container .button {
   color: #097f99;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #097f99;
@@ -120,9 +143,22 @@ nav .nav-bar a:hover {
   font-weight: bold;
 }
 
-#home .button:hover {
+#home .container .button:hover {
   background: #097b95;
   color: #fff;
+}
+
+#about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10vh 0;
 }
 
 * {
@@ -146,23 +182,21 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .top-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100px;
-    margin-bottom: 50px;
-    padding: 10px 0;
+  header {
+    visibility: hidden;
+    height: 0;
   }
   #home {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    padding: 3vh 1vw;
+    padding: 25vh 25vw;
+  }
+  #about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
