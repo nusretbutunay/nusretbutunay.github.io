@@ -1,0 +1,15 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  height: 30px;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+}

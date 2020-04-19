@@ -6,17 +6,17 @@
   padding-top: 15vh;
   color: #fff;
 
+  h1 {
+    font-size: 30px;
+  }
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 5vh;
-    align-items: center;
+
     i {
-      padding-right: 5vw;
-      font-size: 15vh;
-    }
-    h3 {
-      padding-right: 5vw;
+      font-size: 14vh;
     }
   }
 }

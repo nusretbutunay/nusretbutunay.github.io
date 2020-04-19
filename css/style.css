@@ -1,34 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
-header {
-  background-color: #262626;
-  color: #fff;
-}
-
-header .top-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 5vh;
-}
-
-header .top-header-titles {
-  font-weight: bold;
-}
-
-header i {
-  color: #097f99;
-  padding: 0 10px;
-}
-
 nav {
   border-bottom: 1px solid #097f99;
-  overflow: hidden;
   z-index: 5;
 }
 
@@ -36,9 +8,9 @@ nav .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -53,7 +25,7 @@ nav .nav-bar .logo {
 }
 
 nav .nav-bar .logo h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 nav .nav-bar .logo #last-initial {
@@ -121,28 +93,14 @@ nav .nav-bar a:hover {
   color: #fff;
 }
 
-#home h3 {
+#home h2,
+#home h4 {
   font-weight: lighter;
 }
 
 #home .container {
   height: 100%;
   padding-top: 30vh;
-}
-
-#home .container .button {
-  color: #fff;
-  margin-top: 20px;
-  margin-left: -10px;
-  padding: 10px;
-  border: 1px solid #097f99;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-#home .container .button:hover {
-  background: #252525;
-  color: #fff;
 }
 
 #home .container .email {
@@ -163,16 +121,16 @@ nav .nav-bar a:hover {
   line-height: 1.6rem;
   height: 100vh;
   width: 100%;
-  padding-top: 15vh;
+  padding-top: 25vh;
 }
 
 #about .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -187,18 +145,22 @@ nav .nav-bar a:hover {
 }
 
 #about .container .about-me-content h1 {
+  padding: 2vh 0 5vh 0;
   font-size: 45px;
+  color: #097f99;
 }
 
 #about .container .about-me-content p {
-  font-size: 1.2em;
+  padding-bottom: 5vh;
+  font-size: 1.4em;
 }
 
 #about img {
   border: 1px solid #097f99;
   border-radius: 50%;
-  height: 350px;
-  width: 350px;
+  margin-left: 5vw;
+  height: 300px;
+  width: 300px;
 }
 
 #skills {
@@ -210,24 +172,134 @@ nav .nav-bar a:hover {
   color: #fff;
 }
 
+#skills h1 {
+  font-size: 30px;
+}
+
 #skills .skills-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   padding-top: 5vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #skills .skills-grid i {
-  padding-right: 5vw;
-  font-size: 15vh;
+  font-size: 14vh;
 }
 
-#skills .skills-grid h3 {
-  padding-right: 5vw;
+#work {
+  height: 100vh;
+  width: 100%;
+  padding-top: 15vh;
+}
+
+#work h1 {
+  color: #097f99;
+  font-size: 35px;
+}
+
+#work .work-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+#work .work-grid i {
+  font-size: 15vh;
+  margin: 5vh 0;
+  padding: 1vh 1vw;
+  border: 1px solid #262626;
+  border-radius: 20%;
+}
+
+#work .work-grid a {
+  color: #262626;
+}
+
+#work .work-grid a:hover {
+  color: #097f99;
+}
+
+#contact {
+  background-color: #262626;
+  height: 90vh;
+  width: 100%;
+  padding-top: 8vh;
+  color: #fff;
+}
+
+#contact h1 {
+  font-size: 35px;
+}
+
+#contact .contact-form {
+  margin-top: 5vh;
+}
+
+#contact .contact-form input {
+  background-color: #333333;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 35px;
+  padding-left: 15px;
+  color: #fff;
+}
+
+#contact .contact-form #message {
+  height: 70px;
+}
+
+#contact .contact-form #submit {
+  padding: 10px;
+  border: 1px solid #097f99;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+#contact .contact-form #submit:hover {
+  background-color: #262626;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #097f99;
+  height: 30px;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+}
+
+#footer .container {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
@@ -235,10 +307,6 @@ nav .nav-bar a:hover {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -257,8 +325,8 @@ a {
 .sections {
   width: 100%;
   height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
   overflow-y: scroll;
   scroll-padding: 0;
   scroll-behavior: smooth;

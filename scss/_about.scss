@@ -2,11 +2,11 @@
   line-height: 1.6rem;
   height: 100vh;
   width: 100%;
-  padding-top: 15vh;
+  padding-top: 25vh;
 
   .container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: left;
     .about-me-content {
       width: 30vw;
@@ -14,10 +14,13 @@
       text-align: left;
       text-justify: distribute;
       h1 {
+        padding: 2vh 0 5vh 0;
         font-size: 45px;
+        color: $secondary-color;
       }
       p {
-        font-size: 1.2em;
+        padding-bottom: 5vh;
+        font-size: 1.4em;
       }
     }
   }
@@ -25,7 +28,8 @@
   img {
     border: 1px solid $secondary-color;
     border-radius: 50%;
-    height: 350px;
-    width: 350px;
+    margin-left: 5vw;
+    height: 300px;
+    width: 300px;
   }
 }

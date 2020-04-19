@@ -5,14 +5,12 @@
 @import "skills";
 @import "work";
 @import "contact";
+@import "footer";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +28,7 @@ a {
 .sections {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   scroll-padding: 0;
   &::-webkit-scrollbar {

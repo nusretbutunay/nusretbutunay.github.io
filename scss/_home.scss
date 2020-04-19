@@ -31,30 +31,18 @@
     width: 30vw;
     color: #fff;
   }
-  h3 {
+  h2,
+  h4 {
     font-weight: lighter;
   }
   .container {
     height: 100%;
     padding-top: 30vh;
 
-    .button {
-      color: #fff;
-      margin-top: 20px;
-      margin-left: -10px;
-      padding: 10px;
-      border: 1px solid $secondary-color;
-      border-radius: 5px;
-      font-weight: bold;
-
-      &:hover {
-        background: darken($color: $primary-color, $amount: 0.5);
-        color: #fff;
-      }
-    }
     .email {
       padding-top: 1.5vh;
     }
+
     .social-links {
       margin: 3vh 0 1vh 0;
       font-size: 1.5rem;
