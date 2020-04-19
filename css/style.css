@@ -170,6 +170,7 @@ nav .nav-bar a:hover {
   width: 30vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 #about .container .about-me-content h1 {
