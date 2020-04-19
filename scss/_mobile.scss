@@ -15,8 +15,24 @@
     }
   }
   #about {
+    padding-top: 20vh;
+
     .container {
-      flex-direction: column;
+      flex-direction: column-reverse;
+      .about-me-content {
+        width: 60vw;
+        flex-wrap: nowrap;
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+    img {
+      height: 150px;
+      width: 150px;
     }
   }
   #skills {

@@ -280,11 +280,29 @@ footer {
   #home .container {
     padding: 25vh 35vw;
   }
+  #about {
+    padding-top: 20vh;
+  }
   #about .container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #about .container .about-me-content {
+    width: 60vw;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #about .container .about-me-content h1 {
+    font-size: 25px;
+  }
+  #about .container .about-me-content p {
+    font-size: 1em;
+  }
+  #about img {
+    height: 150px;
+    width: 150px;
   }
   #skills {
     padding-top: 30vh;
