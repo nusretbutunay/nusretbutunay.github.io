@@ -57,6 +57,7 @@ nav .nav-bar .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-left: 10vw;
 }
 
 nav .nav-bar .logo h1 {
@@ -72,6 +73,7 @@ nav .nav-bar ul {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  padding-right: 10vw;
 }
 
 nav .nav-bar li {
