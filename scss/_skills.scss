@@ -5,13 +5,12 @@
   width: 100%;
   padding-top: 15vh;
   color: #fff;
-  text-align: center;
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 5vh;
     align-items: center;
-
     i {
       padding-right: 5vw;
       font-size: 15vh;

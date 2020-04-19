@@ -26,13 +26,6 @@ header i {
   padding: 0 10px;
 }
 
-.container {
-  max-width: 1100px;
-  padding: 0 10px;
-  margin: 0 auto;
-  overflow: auto;
-}
-
 nav {
   border-bottom: 1px solid #097f99;
   overflow: hidden;
@@ -57,7 +50,6 @@ nav .nav-bar .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-left: 10vw;
 }
 
 nav .nav-bar .logo h1 {
@@ -73,7 +65,6 @@ nav .nav-bar ul {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  padding-right: 10vw;
 }
 
 nav .nav-bar li {
@@ -109,7 +100,7 @@ nav .nav-bar a:hover {
   content: "";
   display: block;
   background-color: #262626;
-  opacity: 0.7;
+  opacity: 0.85;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -132,12 +123,13 @@ nav .nav-bar a:hover {
 
 #home .container {
   height: 100%;
-  padding: 30vh 20vw;
+  padding-top: 30vh;
 }
 
 #home .container .button {
   color: #fff;
   margin-top: 20px;
+  margin-left: -10px;
   padding: 10px;
   border: 1px solid #097f99;
   border-radius: 5px;
@@ -147,6 +139,16 @@ nav .nav-bar a:hover {
 #home .container .button:hover {
   background: #252525;
   color: #fff;
+}
+
+#home .container .social-links {
+  margin: 3vh 0 1vh 0;
+  font-size: 1.5rem;
+}
+
+#home .container .social-links i {
+  color: #fff;
+  padding-right: 1vw;
 }
 
 #about {
@@ -163,16 +165,17 @@ nav .nav-bar a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 #about .container .about-me-content {
   width: 30vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
+  text-justify: distribute;
 }
 
 #about .container .about-me-content h1 {
@@ -197,7 +200,6 @@ nav .nav-bar a:hover {
   width: 100%;
   padding-top: 15vh;
   color: #fff;
-  text-align: center;
 }
 
 #skills .skills-grid {
@@ -265,8 +267,11 @@ a {
   scroll-snap-align: start;
 }
 
-footer {
-  position: relative;
+.container {
+  max-width: 1100px;
+  padding: 0 10vw;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 @media screen and (max-width: 700px) {

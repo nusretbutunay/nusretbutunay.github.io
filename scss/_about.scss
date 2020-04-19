@@ -7,11 +7,12 @@
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     .about-me-content {
       width: 30vw;
       flex-wrap: wrap;
-      text-align: center;
+      text-align: left;
+      text-justify: distribute;
       h1 {
         font-size: 45px;
       }

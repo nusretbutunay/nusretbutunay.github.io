@@ -11,7 +11,7 @@
     content: "";
     display: block;
     background-color: $primary-color;
-    opacity: 0.7;
+    opacity: 0.85;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -34,11 +34,12 @@
 
   .container {
     height: 100%;
-    padding: 30vh 20vw;
+    padding-top: 30vh;
 
     .button {
       color: #fff;
       margin-top: 20px;
+      margin-left: -10px;
       padding: 10px;
       border: 1px solid $secondary-color;
       border-radius: 5px;
@@ -47,6 +48,15 @@
       &:hover {
         background: darken($color: $primary-color, $amount: 0.5);
         color: #fff;
+      }
+    }
+    .social-links {
+      margin: 3vh 0 1vh 0;
+      font-size: 1.5rem;
+
+      i {
+        color: #fff;
+        padding-right: 1vw;
       }
     }
   }
