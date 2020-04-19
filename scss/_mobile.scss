@@ -9,11 +9,24 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    padding: 25vh 25vw;
+
+    .container {
+      padding: 25vh 35vw;
+    }
   }
   #about {
     .container {
       flex-direction: column;
+    }
+  }
+  #skills {
+    padding-top: 30vh;
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+
+      h3 {
+        visibility: hidden;
+      }
     }
   }
 }

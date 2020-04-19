@@ -1,12 +1,18 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
 }
+
+const currentYear = document.createTextNode(new Date().getFullYear());
+let footerYear = document.getElementById("footer-year");
+footerYear.appendChild(currentYear);

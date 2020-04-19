@@ -4,11 +4,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  padding: 30vh 20vw;
-  overflow: hidden;
+  height: 100%;
   color: #fff;
-  transition: all 0.25s linear;
 
   &::before {
     content: "";
@@ -36,15 +33,15 @@
   }
 
   .container {
-    height: 100vh;
+    height: 100%;
+    padding: 30vh 20vw;
 
     .button {
       color: #fff;
-
       margin-top: 20px;
       padding: 10px;
       border: 1px solid $secondary-color;
-      border-radius: 10px;
+      border-radius: 5px;
       font-weight: bold;
 
       &:hover {

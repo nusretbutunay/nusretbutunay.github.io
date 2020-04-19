@@ -1,0 +1,23 @@
+#skills {
+  background-color: $primary-color;
+  line-height: 1.6rem;
+  height: 100vh;
+  width: 100%;
+  padding: 15vh;
+  color: #fff;
+  text-align: center;
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 5vh;
+    align-items: center;
+
+    i {
+      padding-right: 5vw;
+      font-size: 15vh;
+    }
+    h3 {
+      padding-right: 5vw;
+    }
+  }
+}
