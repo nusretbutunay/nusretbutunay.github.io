@@ -192,7 +192,7 @@ nav .nav-bar a:hover {
   line-height: 1.6rem;
   height: 100vh;
   width: 100%;
-  padding: 15vh;
+  padding-top: 15vh;
   color: #fff;
   text-align: center;
 }
