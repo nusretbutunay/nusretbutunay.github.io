@@ -21,5 +21,14 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
+/*
+.sections {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding-top: 0;
+}
+section {
+  scroll-snap-align: start;
+}
+*/
 @import "mobile";

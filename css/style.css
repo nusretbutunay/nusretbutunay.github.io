@@ -23,7 +23,7 @@ header .top-header-titles {
 
 header i {
   color: #097f99;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .container {
@@ -75,7 +75,7 @@ nav .nav-bar ul {
 }
 
 nav .nav-bar li {
-  padding: 10px 0px 10px 15px;
+  padding: 10px 0px 10px 25px;
 }
 
 nav .nav-bar a {
@@ -103,6 +103,8 @@ nav .nav-bar a:hover {
   padding: 30vh 20vw;
   overflow: hidden;
   color: #fff;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 #home::before {
@@ -125,6 +127,7 @@ nav .nav-bar a:hover {
 
 #home h1 {
   font-size: 45px;
+  font-weight: lighter;
   width: 30vw;
   color: #fff;
 }
@@ -134,8 +137,7 @@ nav .nav-bar a:hover {
 }
 
 #home .container .button {
-  color: #097f99;
-  background-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #097f99;
@@ -144,8 +146,12 @@ nav .nav-bar a:hover {
 }
 
 #home .container .button:hover {
-  background: #097b95;
+  background: #252525;
   color: #fff;
+}
+
+#about {
+  line-height: 1.6rem;
 }
 
 #about .container {
@@ -181,6 +187,16 @@ a {
   cursor: pointer;
 }
 
+/*
+.sections {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding-top: 0;
+}
+section {
+  scroll-snap-align: start;
+}
+*/
 @media screen and (max-width: 700px) {
   header {
     visibility: hidden;
