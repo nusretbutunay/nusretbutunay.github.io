@@ -145,6 +145,10 @@ nav .nav-bar a:hover {
   color: #fff;
 }
 
+#home .container .email {
+  padding-top: 1.5vh;
+}
+
 #home .container .social-links {
   margin: 3vh 0 1vh 0;
   font-size: 1.5rem;
