@@ -121,6 +121,10 @@ nav .nav-bar a:hover {
   color: #fff;
 }
 
+#home h3 {
+  font-weight: lighter;
+}
+
 #home .container {
   height: 100%;
   padding-top: 30vh;
