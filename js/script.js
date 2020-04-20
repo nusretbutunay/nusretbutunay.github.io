@@ -21,12 +21,13 @@ footerYear.appendChild(currentYear);
 
 const drawer = document.querySelector(".drawer");
 const drawerLines = document.querySelectorAll(".drawer-line");
-//const navBar = document.querySelector(".nav-bar");
+const navBarButtons = document.querySelectorAll(".btn");
 const navLinks = document.querySelector(".nav-links");
 //const navItems = document.querySelectorAll(".nav-item");
 
 let showNav = false;
 drawer.addEventListener("click", toggleNav);
+navBarButtons.forEach((btn) => btn.addEventListener("click", toggleNav));
 
 function toggleNav() {
   if (!showNav) {
