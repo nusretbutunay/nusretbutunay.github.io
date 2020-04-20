@@ -1,5 +1,5 @@
-.menu-drawer {
-  position: absolute;
+.drawer {
+  position: fixed;
   //visibility: hidden;
   right: 35px;
   top: 25px;
@@ -10,5 +10,11 @@
     height: 3px;
     margin: 0 0 4px 0;
     background-color: $primary-color;
+  }
+
+  .show {
+    &:nth-child(1) {
+      transform: translate3d(42px, -62px, -135px);
+    }
   }
 }

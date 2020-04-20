@@ -302,18 +302,23 @@ nav .nav-bar a:hover {
           align-items: center;
 }
 
-.menu-drawer {
-  position: absolute;
+.drawer {
+  position: fixed;
   right: 35px;
   top: 25px;
   cursor: pointer;
 }
 
-.menu-drawer .drawer-line {
+.drawer .drawer-line {
   width: 25px;
   height: 3px;
   margin: 0 0 4px 0;
   background-color: #262626;
+}
+
+.drawer .show:nth-child(1) {
+  -webkit-transform: translate3d(42px, -62px, -135px);
+          transform: translate3d(42px, -62px, -135px);
 }
 
 * {
@@ -375,7 +380,6 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
   }
   #home .container {
     padding: 25vh 35vw;
@@ -414,7 +418,7 @@ a {
   #skills .skills-grid h3 {
     visibility: hidden;
   }
-  ul {
+  .links {
     visibility: hidden;
   }
 }
