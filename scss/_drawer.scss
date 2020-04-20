@@ -1,0 +1,14 @@
+.menu-drawer {
+  position: absolute;
+  //visibility: hidden;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+
+  .drawer-line {
+    width: 25px;
+    height: 3px;
+    margin: 0 0 4px 0;
+    background-color: $primary-color;
+  }
+}
