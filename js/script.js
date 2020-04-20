@@ -14,7 +14,7 @@ function myFunction() {
 }
 
 const currentYear = document.createTextNode(new Date().getFullYear());
-let footerYear = document.getElementById("footer-year");
+let footerYear = document.getElementById("copyright");
 footerYear.appendChild(currentYear);
 
 //Drawer functions
