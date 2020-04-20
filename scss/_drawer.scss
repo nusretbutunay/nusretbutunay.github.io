@@ -2,19 +2,32 @@
   position: fixed;
   //visibility: hidden;
   right: 35px;
-  top: 25px;
+  top: 20px;
   cursor: pointer;
+  transition: all 1.2s ease-in-out;
 
   .drawer-line {
     width: 25px;
     height: 3px;
-    margin: 0 0 4px 0;
+    margin: 4px 0 4px 0;
     background-color: $primary-color;
   }
 
-  .show {
-    &:nth-child(1) {
-      transform: translate3d(42px, -62px, -135px);
+  &.close {
+    transform: rotate(180deg);
+
+    .drawer-line {
+      background-color: $secondary-color;
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -5px);
+      }
     }
   }
 }

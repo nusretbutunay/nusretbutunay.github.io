@@ -305,20 +305,40 @@ nav .nav-bar a:hover {
 .drawer {
   position: fixed;
   right: 35px;
-  top: 25px;
+  top: 20px;
   cursor: pointer;
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
 }
 
 .drawer .drawer-line {
   width: 25px;
   height: 3px;
-  margin: 0 0 4px 0;
+  margin: 4px 0 4px 0;
   background-color: #262626;
 }
 
-.drawer .show:nth-child(1) {
-  -webkit-transform: translate3d(42px, -62px, -135px);
-          transform: translate3d(42px, -62px, -135px);
+.drawer.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.drawer.close .drawer-line {
+  background-color: #097f99;
+}
+
+.drawer.close .drawer-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.drawer.close .drawer-line:nth-child(2) {
+  opacity: 0;
+}
+
+.drawer.close .drawer-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(6px, -5px);
+          transform: rotate(-45deg) translate(6px, -5px);
 }
 
 * {
@@ -420,5 +440,13 @@ a {
   }
   .nav-links {
     visibility: hidden;
+  }
+  .nav-links.show {
+    visibility: visible;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

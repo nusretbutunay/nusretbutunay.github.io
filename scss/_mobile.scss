@@ -47,5 +47,12 @@
   }
   .nav-links {
     visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+  }
+  .logo {
+    display: flex;
   }
 }
