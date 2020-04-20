@@ -21,7 +21,7 @@ footerYear.appendChild(currentYear);
 
 const drawer = document.querySelector(".drawer");
 //const navBar = document.querySelector(".nav-bar");
-const navLinks = document.querySelector(".links");
+const navLinks = document.querySelector(".nav-links");
 //const navItems = document.querySelectorAll(".nav-item");
 
 let showNav = false;
