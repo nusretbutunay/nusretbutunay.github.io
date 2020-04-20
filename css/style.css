@@ -489,5 +489,6 @@ a {
   }
   #copyright {
     visibility: hidden;
+    position: absolute;
   }
 }
