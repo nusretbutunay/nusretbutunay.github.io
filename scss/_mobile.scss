@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 
     .container {
-      padding: 25vh 20vw;
+      padding: 25vh 30vw;
     }
   }
   #about {
@@ -60,31 +60,27 @@
   }
 
   .nav-links {
-    // visibility: hidden;
-    overflow: hidden;
-    position: relative;
-    bottom: -9.1vh;
-    left: 100vw;
+    visibility: hidden;
 
     &.show {
       visibility: visible;
-      position: absolute;
+      position: fixed;
       margin: 33px 0 0 0;
       z-index: 5;
-      transform: translateX(-100%);
-      transition: all 1.4s ease-in;
-      color: rgb(2, 2, 2);
-      background-color: #000;
-      width: 40vw;
-      height: 100vh;
-      opacity: 0.9;
     }
 
     .links {
+      position: fixed;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      color: rgb(2, 2, 2);
+      background-color: #000;
+      width: 50vw;
+      height: 100vh;
+      opacity: 0.9;
+      left: 50vw;
 
       a {
         color: #fff;
