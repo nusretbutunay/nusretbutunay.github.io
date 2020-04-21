@@ -461,6 +461,8 @@ a {
     position: fixed;
     margin: 33px 0 0 0;
     z-index: 5;
+    -webkit-transition: ease-in;
+    transition: ease-in;
   }
   .nav-links .links {
     position: fixed;
@@ -479,14 +481,19 @@ a {
             justify-content: center;
     color: #020202;
     background-color: #000;
-    width: 50vw;
-    height: 100vh;
     opacity: 0.9;
-    left: 50vw;
+    width: 30vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    right: 0;
   }
   .nav-links .links a {
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
+  }
+  .nav-links .links a:active {
+    color: #097f99;
   }
   .logo {
     display: -webkit-box;

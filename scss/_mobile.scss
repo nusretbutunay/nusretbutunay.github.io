@@ -67,6 +67,7 @@
       position: fixed;
       margin: 33px 0 0 0;
       z-index: 5;
+      transition: ease-in;
     }
 
     .links {
@@ -77,14 +78,17 @@
       justify-content: center;
       color: rgb(2, 2, 2);
       background-color: #000;
-      width: 50vw;
-      height: 100vh;
       opacity: 0.9;
-      left: 50vw;
+      width: 30vw;
+      height: max-content;
+      right: 0;
 
       a {
         color: #fff;
-        font-size: 40px;
+        font-size: 25px;
+        &:active {
+          color: $secondary-color;
+        }
       }
     }
   }
