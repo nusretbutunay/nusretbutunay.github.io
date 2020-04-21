@@ -65,27 +65,31 @@
     &.show {
       visibility: visible;
       position: fixed;
-      margin: 33px 0 0 0;
+      margin: 32px 0 0 0;
       z-index: 5;
       transition: ease-in;
     }
 
     .links {
+      overflow: hidden;
       position: fixed;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: left;
       justify-content: left;
+      margin-top: 0;
       color: rgb(2, 2, 2);
-      background-color: #000;
+      background-color: darken($color: #fff, $amount: 0.9);
       opacity: 0.9;
-      width: max-content;
+      width: 30vw;
       height: max-content;
       right: 0;
+      text-align: center;
 
       a {
-        color: #fff;
-        font-size: 25px;
+        color: $secondary-color;
+        font-size: 20px;
+
         &:active {
           color: $secondary-color;
         }
