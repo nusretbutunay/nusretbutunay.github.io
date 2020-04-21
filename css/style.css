@@ -14,7 +14,6 @@ nav .nav-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
   margin: 10px 0;
 }
 
@@ -458,15 +457,11 @@ a {
   }
   .nav-links.show {
     visibility: visible;
-    position: fixed;
-    margin: 32px 0 0 0;
-    z-index: 5;
-    -webkit-transition: ease-in;
-    transition: ease-in;
+    z-index: 15;
   }
   .nav-links .links {
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -474,25 +469,21 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-top: 0;
     color: #020202;
-    background-color: #fdfdfd;
+    background-color: #242424;
     opacity: 0.9;
-    width: 30vw;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    right: 0;
     text-align: center;
+    top: 10%;
+    right: 0;
+  }
+  .nav-links .links li {
+    padding: 10px;
   }
   .nav-links .links a {
-    color: #097f99;
+    color: #fff;
     font-size: 20px;
   }
   .nav-links .links a:active {
