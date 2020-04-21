@@ -33,6 +33,7 @@ function toggleNav() {
   if (!showNav) {
     drawer.classList.add("close");
     navLinks.classList.add("show");
+
     drawerLines.forEach((line) => line.classList.add("close"));
     showNav = true;
   } else {
