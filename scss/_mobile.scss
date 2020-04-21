@@ -73,13 +73,13 @@
     .links {
       position: fixed;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row;
+      align-items: left;
+      justify-content: left;
       color: rgb(2, 2, 2);
       background-color: #000;
       opacity: 0.9;
-      width: 30vw;
+      width: max-content;
       height: max-content;
       right: 0;
 
