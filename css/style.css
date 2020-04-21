@@ -476,8 +476,30 @@ a {
     height: -moz-max-content;
     height: max-content;
     text-align: center;
-    top: 10%;
+    top: 9%;
     right: 0;
+  }
+  .nav-links .links.open-animate {
+    -webkit-animation-name: animatenav;
+            animation-name: animatenav;
+    -webkit-animation-duration: 1.6s;
+            animation-duration: 1.6s;
+  }
+  @-webkit-keyframes animatenav {
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes animatenav {
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 0;
+    }
   }
   .nav-links .links li {
     padding: 10px;

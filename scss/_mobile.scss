@@ -77,8 +77,22 @@
       opacity: 0.9;
       height: max-content;
       text-align: center;
-      top: 10%;
+      top: 9%;
       right: 0;
+
+      &.open-animate {
+        animation-name: animatenav;
+        animation-duration: 1.6s;
+
+        @keyframes animatenav {
+          0% {
+            right: -100px;
+          }
+          100% {
+            right: 0;
+          }
+        }
+      }
 
       li {
         padding: 10px;

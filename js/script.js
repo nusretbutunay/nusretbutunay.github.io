@@ -24,6 +24,7 @@ const drawer = document.querySelector(".drawer");
 const drawerLines = document.querySelectorAll(".drawer-line");
 const navBarButtons = document.querySelectorAll(".btn");
 const navLinks = document.querySelector(".nav-links");
+const links = document.querySelector(".links");
 
 let showNav = false;
 drawer.addEventListener("click", toggleNav);
@@ -33,12 +34,15 @@ function toggleNav() {
   if (!showNav) {
     drawer.classList.add("close");
     navLinks.classList.add("show");
+    links.classList.add("open-animate");
 
     drawerLines.forEach((line) => line.classList.add("close"));
     showNav = true;
   } else {
     drawer.classList.remove("close");
     navLinks.classList.remove("show");
+    links.classList.remove("open-animate");
+
     showNav = false;
   }
 }
