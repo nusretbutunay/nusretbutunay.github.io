@@ -403,7 +403,7 @@ a {
     background-repeat: no-repeat;
   }
   #home .container {
-    padding: 25vh 35vw;
+    padding: 25vh 30vw;
   }
   #about {
     padding-top: 20vh;
@@ -439,6 +439,16 @@ a {
   #skills .skills-grid h3 {
     visibility: hidden;
   }
+  #work {
+    padding-top: 30vh;
+  }
+  #work .work-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #work .work-grid i {
+    font-size: 10vh;
+  }
   .drawer {
     visibility: visible;
     z-index: 20;
@@ -450,7 +460,7 @@ a {
     visibility: visible;
     position: fixed;
     margin: 33px 0 0 0;
-    left: 0;
+    right: 50vw;
     z-index: 5;
     -webkit-transform: translate3d(10, -100%, 0);
             transform: translate3d(10, -100%, 0);
@@ -472,15 +482,15 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #fff;
+    color: #020202;
     background-color: #000;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     opacity: 0.9;
   }
   .nav-links .links a {
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
   }
   .logo {
     display: -webkit-box;

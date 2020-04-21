@@ -11,7 +11,7 @@
     //height: 80vh;
 
     .container {
-      padding: 25vh 35vw;
+      padding: 25vh 30vw;
     }
   }
   #about {
@@ -45,6 +45,16 @@
       }
     }
   }
+  #work {
+    padding-top: 30vh;
+    .work-grid {
+      grid-template-columns: repeat(2, 1fr);
+
+      i {
+        font-size: 10vh;
+      }
+    }
+  }
   .drawer {
     visibility: visible;
     z-index: 20;
@@ -56,7 +66,7 @@
       visibility: visible;
       position: fixed;
       margin: 33px 0 0 0;
-      left: 0;
+      right: 50vw;
       z-index: 5;
       transform: translate3d(10, -100%, 0);
       transition: all 1s ease-in;
@@ -68,15 +78,15 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: rgb(2, 2, 2);
       background-color: #000;
-      width: 100vw;
+      width: 50vw;
       height: 100vh;
       opacity: 0.9;
 
       a {
         color: #fff;
-        font-size: 50px;
+        font-size: 40px;
       }
     }
   }
