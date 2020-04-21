@@ -455,7 +455,7 @@ a {
   }
   .nav-links {
     overflow: hidden;
-    position: absolute;
+    position: relative;
     bottom: -9.1vh;
     left: 100vw;
   }
