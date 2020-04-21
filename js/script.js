@@ -1,11 +1,11 @@
 window.onscroll = function () {
-  myFunction();
+  stickyFunction();
 };
 
 let navbar = document.getElementById("navbar");
 let sticky = navbar.offsetTop;
 
-function myFunction() {
+function stickyFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
@@ -13,6 +13,7 @@ function myFunction() {
   }
 }
 
+// Footer current year update
 const currentYear = document.createTextNode(new Date().getFullYear());
 let footerYear = document.getElementById("copyright");
 footerYear.appendChild(currentYear);
@@ -23,7 +24,6 @@ const drawer = document.querySelector(".drawer");
 const drawerLines = document.querySelectorAll(".drawer-line");
 const navBarButtons = document.querySelectorAll(".btn");
 const navLinks = document.querySelector(".nav-links");
-//const navItems = document.querySelectorAll(".nav-item");
 
 let showNav = false;
 drawer.addEventListener("click", toggleNav);

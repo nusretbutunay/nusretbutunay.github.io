@@ -6,7 +6,6 @@
 @import "work";
 @import "contact";
 @import "footer";
-@import "drawer";
 
 * {
   box-sizing: border-box;
@@ -53,4 +52,5 @@ a {
   margin: 0 auto;
   overflow: auto;
 }
+@import "drawer";
 @import "mobile";
