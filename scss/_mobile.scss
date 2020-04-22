@@ -60,52 +60,7 @@
   }
 
   .nav-links {
-    visibility: hidden;
-
-    &.show {
-      visibility: visible;
-      z-index: 15;
-    }
-
-    .links {
-      overflow: hidden;
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      color: rgb(2, 2, 2);
-      background-color: darken($color: $primary-color, $amount: 0.9);
-      opacity: 0.9;
-      height: max-content;
-      text-align: center;
-      top: 9%;
-      right: 0;
-
-      &.open-animate {
-        animation-name: animatenav;
-        animation-duration: 1.6s;
-
-        @keyframes animatenav {
-          0% {
-            right: -100px;
-          }
-          100% {
-            right: 0;
-          }
-        }
-      }
-
-      li {
-        padding: 10px;
-      }
-      a {
-        color: #fff;
-        font-size: 20px;
-
-        &:active {
-          color: $secondary-color;
-        }
-      }
-    }
+    display: none;
   }
   .logo {
     display: flex;
