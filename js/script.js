@@ -31,7 +31,7 @@ function toggleNav() {
   if (!showNav) {
     drawer.classList.add("close");
     mobileBar.classList.add("open");
-    document.getElementById("mobile-bar").style.width = "20vw";
+    document.getElementById("mobile-bar").style.width = "25vw";
     document.getElementById("mobile-bar").style.right = "0";
 
     showNav = true;
@@ -43,3 +43,8 @@ function toggleNav() {
     showNav = false;
   }
 }
+
+document.getElementsByTagName("a").addEventListener("click", (e) => {
+  document.getElementById("mobile-bar").style.width = "0";
+  document.getElementById("mobile-bar").style.right = "-20vw";
+});
