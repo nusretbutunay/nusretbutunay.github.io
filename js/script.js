@@ -31,7 +31,7 @@ function toggleNav() {
   if (!showNav) {
     drawer.classList.add("close");
     mobileBar.classList.add("open");
-    document.getElementById("mobile-bar").style.width = "25vw";
+    document.getElementById("mobile-bar").style.width = "max-content";
     document.getElementById("mobile-bar").style.right = "0";
 
     showNav = true;
