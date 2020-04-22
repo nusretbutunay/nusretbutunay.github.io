@@ -362,12 +362,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   width: 0;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  top: 0;
+  top: 64.2px;
   right: -20vw;
   padding: 10px;
   z-index: 25;
@@ -476,7 +476,7 @@ a {
     visibility: hidden;
   }
   #work {
-    padding-top: 30vh;
+    padding-top: 15vh;
   }
   #work .work-grid {
     -ms-grid-columns: (1fr)[2];
