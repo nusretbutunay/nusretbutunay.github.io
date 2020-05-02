@@ -113,13 +113,27 @@ nav .nav-bar a:hover {
 }
 
 #home .container .social-links {
-  margin: 3vh 0 1vh 0;
+  margin: 3vh 0 2.5vh 0;
   font-size: 1.5rem;
 }
 
 #home .container .social-links i {
   color: #fff;
   padding-right: 1vw;
+}
+
+#home .resume-btn {
+  background-color: #262626;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#home .resume-btn:hover {
+  background-color: #fff;
+  color: #262626;
 }
 
 #about {

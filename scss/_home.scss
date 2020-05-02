@@ -44,13 +44,27 @@
     }
 
     .social-links {
-      margin: 3vh 0 1vh 0;
+      margin: 3vh 0 2.5vh 0;
       font-size: 1.5rem;
 
       i {
         color: #fff;
         padding-right: 1vw;
       }
+    }
+  }
+
+  .resume-btn {
+    background-color: $primary-color;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-color;
     }
   }
 }
