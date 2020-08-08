@@ -221,6 +221,7 @@ nav .nav-bar a:hover {
 #work .work-grid {
   display: -ms-grid;
   display: grid;
+  text-align: center;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-flex-line-pack: stretch;
